@@ -6,22 +6,22 @@ spring:
     gateway:
       routes:
         - id: hotels-service
-          uri: http://localhost:8080
+          uri: https://hotel-service-1m5y.onrender.com
           predicates:
             - Path=/api/hotels/**
 
         - id: users-service
-          uri: http://localhost:8081
+          uri: https://user-service-kb98.onrender.com
           predicates:
             - Path=/api/users/**
 
         - id: bookings-service
-          uri: http://localhost:8083
+          uri: https://booking-service-dbej.onrender.com
           predicates:
             - Path=/bookings/**
 
         - id: contacts-service
-          uri: http://localhost:8084
+          uri: https://contact-service-lzsl.onrender.com
           predicates:
             - Path=/contacts/**
 
