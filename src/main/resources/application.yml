@@ -8,21 +8,25 @@ spring:
         - id: hotels-service
           uri: https://hotel-service-1m5y.onrender.com
           predicates:
+            - Path=/api/hotels
             - Path=/api/hotels/**
 
         - id: users-service
           uri: https://user-service-kb98.onrender.com
           predicates:
+            - Path=/api/users
             - Path=/api/users/**
 
         - id: bookings-service
           uri: https://booking-service-dbej.onrender.com
           predicates:
+            - Path=/api/bookings
             - Path=/api/bookings/**
 
         - id: contacts-service
           uri: https://contact-service-lzsl.onrender.com
           predicates:
+            - Path=/api/contacts
             - Path=/api/contacts/**
 
       globalcors:
