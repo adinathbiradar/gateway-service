@@ -18,12 +18,12 @@ spring:
         - id: bookings-service
           uri: https://booking-service-dbej.onrender.com
           predicates:
-            - Path=/bookings/** 
+            - Path=/api/bookings/**
 
         - id: contacts-service
           uri: https://contact-service-lzsl.onrender.com
           predicates:
-            - Path=/contacts/** 
+            - Path=/api/contacts/**
 
       globalcors:
         corsConfigurations:
