@@ -9,29 +9,21 @@ spring:
           uri: https://hotel-service-1m5y.onrender.com
           predicates:
             - Path=/api/hotels/**
-          filters:
-            - StripPrefix=1
 
         - id: users-service
           uri: https://user-service-kb98.onrender.com
           predicates:
             - Path=/api/users/**
-          filters:
-            - StripPrefix=1
 
         - id: bookings-service
           uri: https://booking-service-dbej.onrender.com
           predicates:
             - Path=/bookings/** 
-          filters:
-            - StripPrefix=1
 
         - id: contacts-service
           uri: https://contact-service-lzsl.onrender.com
           predicates:
             - Path=/contacts/** 
-          filters:
-            - StripPrefix=1
 
       globalcors:
         corsConfigurations:
@@ -42,8 +34,6 @@ spring:
             allowedMethods: "*"
             allowedHeaders: "*"
             allowCredentials: true
-
-      # Removed default-filters to avoid CORS header conflicts
 
 management:
   endpoints:
