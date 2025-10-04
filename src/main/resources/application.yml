@@ -10,28 +10,28 @@ spring:
           predicates:
             - Path=/api/hotels/**
           filters:
-            - RewritePath=/api/hotels/(?<segment>.*), /${segment}
+            - RewritePath=/api/hotels/(?<segment>.*), /api/hotels/${segment}
 
         - id: users-service
           uri: https://user-service-kb98.onrender.com
           predicates:
             - Path=/api/users/**
           filters:
-            - RewritePath=/api/users/(?<segment>.*), /${segment}
+            - RewritePath=/api/users/(?<segment>.*), /api/users/${segment}
 
         - id: bookings-service
           uri: https://booking-service-dbej.onrender.com
           predicates:
             - Path=/api/bookings/**
           filters:
-            - RewritePath=/api/bookings/(?<segment>.*), /${segment}
+            - RewritePath=/api/bookings/(?<segment>.*), /api/bookings/${segment}
 
         - id: contacts-service
           uri: https://contact-service-lzsl.onrender.com
           predicates:
             - Path=/api/contacts/**
           filters:
-            - RewritePath=/api/contacts/(?<segment>.*), /${segment}
+            - RewritePath=/api/contacts/(?<segment>.*), /api/contacts/${segment}
 
       globalcors:
         corsConfigurations:
