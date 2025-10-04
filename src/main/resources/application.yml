@@ -21,6 +21,7 @@ spring:
 
         - id: bookings-service
           uri: https://booking-service-dbej.onrender.com
+
           predicates:
             - Path=/api/bookings/**
           filters:
